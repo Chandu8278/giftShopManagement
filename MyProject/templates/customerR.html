@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>shop owner login</title>
+	<style type="text/css">
+		#submit{
+			margin-left:100%;
+		}
+        nav a{
+			text-decoration: none;
+			padding: 15px;
+			color: black;
+			display: inline-block;
+		}
+		nav a:hover{
+			background-color: black;
+			color:white;
+		}
+		a{
+			text-decoration: none;
+			padding: 15px;
+			color: black;
+			display: inline-block;
+		}
+		a:hover{
+			font-size: 1.2em;
+		}
+
+
+	</style>
+</head>
+<body bgcolor="grey">
+	
+		
+ <form name="f">
+ 	<h1 style="text-align: center;">The Gift Shop Management Application</h1>
+ <nav>
+ 	<a href="{{url_for('index')}}">Home</a>
+    <a href="{{url_for('about')}}">About</a>
+    <a href="{{url_for('stockmanager')}}">Stock Manager Login</a>
+    <a href="{{url_for('shopowner')}}">Shop Owner Login</a>
+    <a href="{{url_for('customer')}}">Customer Registration & Login</a>
+ </nav>
+ <h1 style="text-align: center">Customer Registration</h1>
+ <center>
+ 	<table>
+ 		<tr>
+ 			<td>UserName: </td>&nbsp;&nbsp;&nbsp;&nbsp;
+ 			<td><input type="text" name="uname" placeholder="Customer UserName"></td>
+
+ 		</tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr>
+<td>Gender</td>&nbsp;&nbsp;&nbsp;&nbsp;
+<td><input type="radio" name="gender" value="male" placeholder="male" required>Male&nbsp;&nbsp;<input type="radio" name="gender" value="female" placeholder="female" required>Female</td>
+</tr>
+<tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr>
+ 		<td>Email: </td>&nbsp;&nbsp;&nbsp;&nbsp;
+ 			<td><input type="text" name="email" placeholder="Customer email"></td>
+
+ 		</tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr>
+ 		<td>Mobile Number: </td>&nbsp;&nbsp;&nbsp;&nbsp;
+ 			<td><input type="text" name="mob" placeholder="Customer mobile"></td>
+
+ 		</tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr>
+ 			<td>Password: </td>&nbsp;&nbsp;&nbsp;&nbsp;
+ 			<td><input type="Password" name="pwd" placeholder="Customer Password"></td> 			
+ 		</tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr>
+ 			<td><input type="submit" name="submit" id="submit"></td>
+ 		</tr>
+ 	</table>
+ </form>
+ <a href="">Don't have an account?Click here</a>
+ </center>
+</body>
+</html>

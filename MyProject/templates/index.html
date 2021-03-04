@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>main page</title>
+	<style type="text/css">
+		a{
+			text-decoration: none;
+			padding: 15px;
+			color: black;
+			display: inline-block;
+		}
+		a:hover{
+			background-color: black;
+			color:white;
+		}
+
+	</style>
+</head>
+<body bgcolor="gray">
+	{% block demo %}
+ <h1 style="text-align: center;">The Gift Shop Management Application</h1>
+ <nav>
+ 	<a href="{{url_for('index')}}">Home</a>
+    <a href="{{url_for('about')}}">About</a>
+    <a href="{{url_for('stockmanager')}}">Stock Manager Login</a>
+    <a href="{{url_for('shopowner')}}">Shop Owner Login</a>
+    <a href="{{url_for('customer')}}">Customer Registration & Login</a>
+ </nav>
+ {% endblock %}
+ {%block image%}
+ <img src="static/images/img1.jpeg" width="100%">
+ {% endblock %}
+ {%block desc%}
+ {% endblock %}
+</body>
+</html>
