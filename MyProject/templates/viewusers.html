@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+</head>
+<body>
+	
+	<h1 align=center bgolor='red'>Home</h1>
+	<center>
+
+<br>
+<br>
+<h3 align="center"><u>View Users</u></h3><br><br>
+
+<table align="center" border="2">
+<tr>
+
+<th>NAME</th>
+<th>Gender</th>
+<th>EMAIL</th>
+<th>Mobile</th>
+<th>PASSWORD</th>
+
+<th>ACTION</th>
+</tr>
+
+{% for row in rows %}
+<tr>
+
+<td>{{row["name"]}}</td>
+<td>{{row["gender"]}}</td>
+<td>{{row["email"]}}</td>
+<td>{{row["mobile"]}}</td>
+<td>{{row["password"]}}</td>
+
+</tr>
+{% endfor %}
+
+
+</table>
+
+
+
+
+</center>
+
+
+</body>
+</html>

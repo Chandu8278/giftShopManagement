@@ -23,7 +23,7 @@
 <body bgcolor="grey">
 	
 		
- <form name="f">
+ 
  	<h1 style="text-align: center;">The Gift Shop Management Application</h1>
  <nav>
  	<a href="{{url_for('index')}}">Home</a>
@@ -33,11 +33,12 @@
     <a href="{{url_for('customer')}}">Customer Registration & Login</a>
  </nav>
  <h1 style="text-align: center">ShopOwner Login</h1>
+ <form name="f" action="/sologin" method="post">
  <center>
  	<table>
  		<tr>
  			<td>UserName: </td>&nbsp;&nbsp;&nbsp;&nbsp;
- 			<td><input type="text" name="uname" placeholder="ShopOwner UserName"></td>
+ 			<td><input type="text" name="email" placeholder="ShopOwner UserName"></td>
 
  		</tr>
  		<tr></tr>

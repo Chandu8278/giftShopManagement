@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>main page</title>
+	<style type="text/css">
+		a{
+			text-decoration: none;
+			padding: 15px;
+			color: black;
+			display: inline-block;
+		}
+		a:hover{
+			background-color: black;
+			color:white;
+		}
+
+	</style>
+</head>
+<body bgcolor="gray">
+	
+ <h1 style="text-align: center;">The Gift Shop Management Application</h1>
+ <nav>
+ 	<a href="{{url_for('userindex')}}">Home</a>
+    <a href="{{url_for('changepwd')}}">Change Password</a>
+    <a href="">Search Products</a>
+    <a href="">View Orders</a>
+    <a href="{{url_for('logout')}}">Logout</a>
+ </nav>
+ 
+</html>

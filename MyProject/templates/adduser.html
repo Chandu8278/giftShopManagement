@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+</head>
+<body>
+	
+	<h1 align=center bgolor='red'>Home</h1>
+	<center>
+<hr>
+
+<a href="{{url_for('adduser')}}">AddUser</a>&nbsp;&nbsp;&nbsp;
+
+	<hr>
+	{{message}}
+<form method="post" name="form" action="insertuser">
+
+<input type="text" name="name" placeholder="Enter Name" required>&nbsp;&nbsp;&nbsp;<br><br>
+<input type="text" name="email" placeholder="Enter Email" required>&nbsp;&nbsp;&nbsp;<br><br>
+<input type="password" name="password" placeholder="Enter Password" required>&nbsp;&nbsp;&nbsp;<br><br>
+<input type="text" name="location" placeholder="Enter Location" required>&nbsp;&nbsp;&nbsp;<br><br>
+<input type="submit" name="submit">
+	
+</form>
+
+
+
+
+</center>
+
+
+</body>
+</html>

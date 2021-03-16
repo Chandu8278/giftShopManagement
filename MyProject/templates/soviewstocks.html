@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>main page</title>
+	<style type="text/css">
+		a{
+			text-decoration: none;
+			padding: 15px;
+			color: black;
+			display: inline-block;
+		}
+		a:hover{
+			background-color: black;
+			color:white;
+		}
+
+	</style>
+</head>
+<body bgcolor="gray">
+	
+ <h1 style="text-align: center;">The Gift Shop Management Application</h1>
+ <nav>
+ 	<a href="{{url_for('soindex')}}">Home</a>
+    <a href="{{url_for('sochangepwd')}}">Change Password</a>
+    <a href="{{url_for('sorequeststock')}}">Request Stock</a>
+    <a href="{{url_for('soviewstocks')}}">View Stock</a>
+    <a href="">View Orders</a>
+    <a href="{{url_for('logout')}}">Logout</a>
+ </nav>
+ <center>
+ 	<h1>Stocks</h1>
+ <table align="center" border="2">
+<tr>
+
+<th>Stock_id</th>
+<th>Gift Category</th>
+<th>Gift Name</th>
+<th>Gift Description</th>
+<th>Cost</th>
+<th>Quantity</th>
+</tr>
+
+{% for row in rows %}
+<tr>
+
+<td>{{row[0]}}</td>
+<td>{{row[1]}}</td>
+<td>{{row[2]}}</td>
+<td>{{row[3]}}</td>
+<td>{{row[4]}}</td>
+<td>{{row[5]}}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+
+
+
+
+</center>
+
+</html>

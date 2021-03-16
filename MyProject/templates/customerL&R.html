@@ -32,7 +32,7 @@
 <body bgcolor="grey">
 	
 		
- <form name="f">
+ 
  	<h1 style="text-align: center;">The Gift Shop Management Application</h1>
  <nav>
  	<a href="{{url_for('index')}}">Home</a>
@@ -41,12 +41,18 @@
     <a href="{{url_for('shopowner')}}">Shop Owner Login</a>
     <a href="{{url_for('customer')}}">Customer Registration & Login</a>
  </nav>
+ <br><br>
+ <center>{{message}}</center>
  <h1 style="text-align: center">Customer Login</h1>
+
  <center>
+ 
+ 	<br>
+ 	<form name="f" method="post" action="/loginuser">
  	<table>
  		<tr>
  			<td>UserName: </td>&nbsp;&nbsp;&nbsp;&nbsp;
- 			<td><input type="text" name="uname" placeholder="Customer UserName"></td>
+ 			<td><input type="text" name="email" placeholder="Customer UserName"></td>
 
  		</tr>
  		<tr></tr>

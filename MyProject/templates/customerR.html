@@ -32,7 +32,7 @@
 <body bgcolor="grey">
 	
 		
- <form name="f">
+ 
  	<h1 style="text-align: center;">The Gift Shop Management Application</h1>
  <nav>
  	<a href="{{url_for('index')}}">Home</a>
@@ -41,8 +41,10 @@
     <a href="{{url_for('shopowner')}}">Shop Owner Login</a>
     <a href="{{url_for('customer')}}">Customer Registration & Login</a>
  </nav>
+ {{message}}
  <h1 style="text-align: center">Customer Registration</h1>
  <center>
+ 	<form name="form" method="post" action="/registeruser">
  	<table>
  		<tr>
  			<td>UserName: </td>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -113,7 +115,7 @@
  		</tr>
  	</table>
  </form>
- <a href="">Don't have an account?Click here</a>
+ 
  </center>
 </body>
 </html>

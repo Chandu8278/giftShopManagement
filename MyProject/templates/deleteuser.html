@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+</head>
+<body>
+	
+	<h1 align=center bgolor='red'>Home</h1>
+	<center>
+
+&nbsp;&nbsp;&nbsp;<a href="{{url_for('register')}}">Home</a>&nbsp;&nbsp;&nbsp;
+<a href="{{url_for('adduser')}}">AddUser</a>&nbsp;&nbsp;&nbsp;
+<a href="{{url_for('viewusers')}}">ViewUsers</a>&nbsp;&nbsp;&nbsp;
+<a href="{{url_for('deleteuser')}}">DeleteUser</a>&nbsp;&nbsp;&nbsp;
+	<hr>
+<form method="post" name="form" action="deleteoperation">
+
+
+<input type="text" name="id" placeholder="Enter Id" required>&nbsp;&nbsp;&nbsp;<br><br>
+
+<input type="submit" name="Delete User">
+	
+</form>
+
+
+
+
+</center>
+
+
+</body>
+</html>

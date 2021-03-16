@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>main page</title>
+	<style type="text/css">
+		a{
+			text-decoration: none;
+			padding: 15px;
+			color: black;
+			display: inline-block;
+		}
+		a:hover{
+			background-color: black;
+			color:white;
+		}
+
+	</style>
+</head>
+<body bgcolor="gray">
+	
+ <h1 style="text-align: center;">The Gift Shop Management Application</h1>
+ <nav>
+ 	<a href="{{url_for('smindex')}}">Home</a>
+    <a href="{{url_for('smchangepwd')}}">Change Password</a>
+    <a href="{{url_for('smaddstock')}}">Add Stock</a>
+    <a href="{{url_for('viewstocks')}}">View Stock</a>
+    <a href="{{url_for('viewrequests')}}">View Request</a>
+    <a href="{{url_for('logout')}}">Logout</a>
+ </nav>
+ <center>
+ 	{{message}}
+ 	
+ 	<h1 style="text-align: center;">Add Stock</h1>
+ 	<form name="form" method="post" action="/smaddstockit">
+ 	<table>
+ 		<tr>
+ 			<td>Stock id: </td>&nbsp;&nbsp;&nbsp;&nbsp;
+ 			<td><input type="text" name="sid" placeholder="" required></td>
+
+ 		</tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr>
+<td>Gift Category</td>&nbsp;&nbsp;&nbsp;&nbsp;
+<td><input type="text" name="gc" placeholder="" required></td>
+</tr>
+
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr>
+ 		<td>Gift Name</td>&nbsp;&nbsp;&nbsp;&nbsp;
+ 			<td><input type="text" name="gn" placeholder="" required></td>
+
+ 		</tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr>
+ 		<td>Gift Description</td>&nbsp;&nbsp;&nbsp;&nbsp;
+ 			<td><input type="text" name="gd" placeholder="" required></td>
+
+ 		</tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr>
+ 			<td>Cost</td>&nbsp;&nbsp;&nbsp;&nbsp;
+ 			<td><input type="text" name="cost" placeholder="" required></td> 			
+ 		</tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr>
+ 			<td>Quantity</td>&nbsp;&nbsp;&nbsp;&nbsp;
+ 			<td><input type="text" name="quantity" placeholder="" required></td> 			
+ 		</tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr></tr>
+ 		<tr>
+ 			<td><input type="submit" name="submit" id="submit"></td>
+ 		</tr>
+ 	</table>
+ </form>
+ 
+ 
+ 
+ </center>
+</html>
